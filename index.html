@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai Rahul — Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Sai Rahul – Web Developer specialising in HTML, CSS, JavaScript, React, Python and Java." />
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6.7.2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">PORTFOLIO</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"         onclick="closeMenu()"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#about"        onclick="closeMenu()"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="#skills"       onclick="closeMenu()"><i class="fa-solid fa-code"></i> Skills</a></li>
+        <li><a href="#experience"   onclick="closeMenu()"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+        <li><a href="#projects"     onclick="closeMenu()"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+        <li><a href="#certificates" onclick="closeMenu()"><i class="fa-solid fa-certificate"></i> Certificates</a></li>
+        <li><a href="#contact"      onclick="closeMenu()"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+
+      <!-- Hamburger toggle (mobile) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       1. HERO / HOME
+  ════════════════════════════════════════════════════════ -->
+  <section id="home">
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- Left: text -->
+        <div class="hero-text">
+          <div class="hero-greeting">
+            <span class="dot"></span>
+            Available for work
+          </div>
+
+          <h1 class="hero-name">
+            Hello, I'm
+            <span class="name-highlight">Sai Rahul</span>
+          </h1>
+
+          <p class="hero-title">
+            <span class="type-accent">Web Developer</span>
+              Enthusiast
+          </p>
+
+          <p class="hero-desc">
+            I craft clean, performant, and beautiful digital products — from
+            pixel-perfect interfaces to scalable back-end systems. Turning
+            complex ideas into elegant solutions is what I love most.
+          </p>
+
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-eye"></i> View Projects
+            </a>
+            <a href="images/resume.pdf" download="Sai_Rahul_Resume.pdf" class="btn btn-outline">
+    <i class="fa-solid fa-download"></i> Download Resume
+</a>
+          </div>
+        </div><!-- /hero-text -->
+
+        <!-- Right: circular photo -->
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-ring">
+            <img src="images/profile.jpg"
+                 alt="Sai Rahul – profile photo"
+                 onerror="this.style.display='none'" />
+          </div>
+
+          <!-- Floating badge -->
+         
+          </div>
+        </div><!-- /hero-photo-wrap -->
+
+      </div><!-- /hero-inner -->
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       2. ABOUT
+  ════════════════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Get to know me</span>
+        <h2 class="section-title">About <span>Me</span></h2>
+        <p class="section-subtitle">
+          A passionate developer with a knack for problem-solving and a love
+          for creating meaningful digital experiences.
+        </p>
+      </div>
+
+      <div class="about-grid">
+
+        <!-- Left: main about card -->
+        <div class="about-card">
+          <p>
+            Hi! I'm <strong>Sai Rahul</strong>,
+             I'm currently pursuing my B.Tech in Computer Science
+            at Veltech University (2024–2028) and passionate about building
+            modern, user-friendly web applications.
+          </p>
+          <p>
+            I work with HTML5, CSS3, JavaScript and React on the front end, and
+            Python and Java on the back end. I enjoy writing clean, maintainable
+            code and continuously expanding my skill set.
+          </p>
+
+          <ul class="about-info-list">
+            <li>
+              <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <span class="info-label">Education</span>
+                <span class="info-value">B.Tech Computer Science — Veltech University (2024–2028)</span>
+              </div>
+            </li>
+            <li>
+              <div class="info-icon"><i class="fa-solid fa-cake-candles"></i></div>
+              <div>
+                <span class="info-label">Date of Birth</span>
+                <span class="info-value">30 October 2006</span>
+              </div>
+            </li>
+            <li>
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Vizianagaram, Andhra Pradesh, India</span>
+              </div>
+            </li>
+            <li>
+              <div class="info-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <div>
+                <span class="info-label">Current Role</span>
+                <span class="info-value">Student</span>
+              </div>
+            </li>
+            <li>
+              <div class="info-icon"><i class="fa-solid fa-language"></i></div>
+              <div>
+                <span class="info-label">Languages</span>
+                <span class="info-value">Telugu (Native), English (Conversational)</span>
+              </div>
+            </li>
+          </ul>
+        </div><!-- /about-card -->
+
+        <!-- Right: objective cards -->
+        <div class="about-objective">
+          <div class="objective-card">
+            <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <h3>Career Objective</h3>
+            <p>
+              To leverage my web development skills in a forward-thinking engineering
+              team where I can ship impactful products, collaborate with talented
+              engineers, and grow into a well-rounded developer.
+            </p>
+          </div>
+
+          <div class="objective-card">
+            <div class="card-icon"><i class="fa-solid fa-seedling"></i></div>
+            <h3>Currently Learning</h3>
+            <p>
+              Deepening my knowledge in Web Development, Java and Python —
+              building projects and sharpening my problem-solving skills to
+              become a full-stack developer.
+            </p>
+          </div>
+
+          <div class="objective-card">
+            <div class="card-icon"><i class="fa-solid fa-trophy"></i></div>
+            <h3>Achievements</h3>
+            <p>
+              Earned 2 Infosys Certificates in recognition of completing
+              industry-relevant technology courses on the Infosys Springboard
+              platform.
+            </p>
+          </div>
+        </div><!-- /about-objective -->
+
+      </div><!-- /about-grid -->
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       3. SKILLS
+  ════════════════════════════════════════════════════════ -->
+  <section id="skills">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">What I bring</span>
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+        <p class="section-subtitle">
+          Hover over a card to see the skill animation in action.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- HTML -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-name">
+              <i class="fa-brands fa-html5 skill-icon" style="color:#E34F26;"></i> HTML5
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="--fill: 85%;"></div>
+          </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-name">
+              <i class="fa-brands fa-css3-alt skill-icon" style="color:#1572B6;"></i> CSS3
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="--fill: 80%;"></div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-name">
+              <i class="fa-brands fa-js skill-icon" style="color:#F7DF1E;"></i> JavaScript
+            </div>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="--fill: 75%;"></div>
+          </div>
+        </div>
+
+        <!-- React -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-name">
+              <i class="fa-brands fa-react skill-icon" style="color:#61DAFB;"></i> React
+            </div>
+            <span class="skill-percent">65%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="--fill: 65%;"></div>
+          </div>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-name">
+              <i class="fa-brands fa-python skill-icon" style="color:#3776AB;"></i> Python
+            </div>
+            <span class="skill-percent">70%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="--fill: 70%;"></div>
+          </div>
+        </div>
+
+        <!-- Java -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-name">
+              <i class="fa-brands fa-java skill-icon" style="color:#007396;"></i> Java
+            </div>
+            <span class="skill-percent">65%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="--fill: 65%;"></div>
+          </div>
+        </div>
+
+      </div><!-- /skills-grid -->
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       4. EXPERIENCE
+  ════════════════════════════════════════════════════════ -->
+  <section id="experience">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">My journey</span>
+        <h2 class="section-title">Work <span>Experience</span></h2>
+        <p class="section-subtitle">
+          Roles and projects that have shaped my development perspective.
+        </p>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-tag">Internship</span>
+            <h3>Web Development Intern — Pavshree Designs</h3>
+            <p class="timeline-meta">
+              <span><i class="fa-regular fa-calendar"></i> June 2026 – July 2026</span>
+              <span><i class="fa-solid fa-location-dot"></i> Visakhapatnam, Andhra Pradesh</span>
+            </p>
+            <p>
+                During my training at Pavshree Design, I worked on developing responsive websites using HTML, CSS, and JavaScript. 
+                I gained practical experience in creating clean, interactive,
+                 and visually appealing web pages while learning modern development techniques.
+                 This experience strengthened my technical knowledge, attention to detail, 
+                and ability to build efficient web solutions.
+              
+            </p>
+            <div class="timeline-techs">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">React</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       5. PROJECTS
+  ════════════════════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">What I've built</span>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <p class="section-subtitle">
+          A selection of projects I'm proud of — from idea to deployment.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div class="project-body">
+            <h3>Portfolio Website</h3>
+            <p>
+              A personal portfolio website showcasing my skills, projects,
+              certificates and work experience. Designed with a clean, modern
+              UI using HTML5, CSS3 and vanilla JavaScript with smooth scroll
+              animations.
+            </p>
+            <div class="project-techs">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-btns">
+              <a href="#" class="btn-sm btn-indigo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com/sairahul2006" target="_blank" rel="noopener" class="btn-sm btn-ghost">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <div class="project-body">
+            <h3>Restaurant Website</h3>
+            <p>
+              A fully responsive restaurant website featuring an interactive
+              menu, online reservation form, gallery section and contact page.
+              Built with a focus on clean design and great user experience.
+            </p>
+            <div class="project-techs">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-btns">
+              <a href="https://sairahul2006.github.io/restaurant/" class="btn-sm btn-indigo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com/sairahul2006/restauran" target="_blank" rel="noopener" class="btn-sm btn-ghost">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <div class="project-body">
+            <h3>Google Homepage Clone</h3>
+            <p>
+              A pixel-accurate clone of the Google Search homepage built with
+              HTML5 and CSS3. Demonstrates strong attention to detail in UI
+              replication, layout structuring and responsive design techniques.
+            </p>
+            <div class="project-techs">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+            <div class="project-btns">
+              <a href="https://sairahul2006.github.io/google_clone/" class="btn-sm btn-indigo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href=" https://github.com/sairahul2006/google_clone" target="_blank" rel="noopener" class="btn-sm btn-ghost">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       6. CERTIFICATES
+  ════════════════════════════════════════════════════════ -->
+  <section id="certificates">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Credentials</span>
+        <h2 class="section-title">Certificates &amp; <span>Awards</span></h2>
+        <p class="section-subtitle">
+          Continuous learning is the heartbeat of a great engineer.
+        </p>
+      </div>
+
+      <div class="certs-grid">
+
+    <!-- Certificate 1 -->
+    <a href="images/Infosys_1.pdf" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+        <div class="cert-card">
+            <div class="cert-ribbon"><i class="fa-solid fa-award"></i></div>
+            <h3>communication to success</h3>
+            <p class="cert-org">Infosys Springboard</p>
+            <p class="cert-year">Issued: 2025</p>
+            <span class="cert-badge">Communication</span>
+        </div>
+    </a>
+
+    <!-- Certificate 2 -->
+    <a href="images/Infosys_2.pdf" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+        <div class="cert-card">
+            <div class="cert-ribbon"><i class="fa-solid fa-award"></i></div>
+            <h3>Infosys Certificate - 2</h3>
+            <p class="cert-org">Infosys Springboard</p>
+            <p class="cert-year">Issued: 2025</p>
+            <span class="cert-badge">Mindset</span>
+        </div>
+    </a>
+
+</div><!-- /certs-grid -->
+
+
+  <!-- ════════════════════════════════════════════════════════
+       7. CONTACT
+  ════════════════════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Let's connect</span>
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <p class="section-subtitle">
+          Have a project in mind, a question, or just want to say hi? My inbox
+          is always open.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left: contact info -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>
+            Whether you want to discuss a potential project, explore collaboration
+            opportunities, or simply grab a virtual coffee — feel free to reach out
+            through any of the channels below.
+          </p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-item-text">
+                <span class="label">Email</span>
+                <a href="mailto:r4650819@gmail.com">r4650819@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-item-text">
+                <span class="label">Phone</span>
+                <a href="tel:+918500972076">+91 8500972076</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-item-text">
+                <span class="label">Address</span>
+                <span>Vizianagaram, Andhra Pradesh, India</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="contact-item-text">
+                <span class="label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/sairahul2006/" target="_blank" rel="noopener">
+                  linkedin.com/in/sairahul2006
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-item-text">
+                <span class="label">GitHub</span>
+                <a href="https://github.com/sairahul2006" target="_blank" rel="noopener">
+                  github.com/sairahul2006
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-brands fa-x-twitter"></i></div>
+              <div class="contact-item-text">
+                <span class="label">X (Twitter)</span>
+                <a href="https://x.com/home" target="_blank" rel="noopener">
+                  x.com/sairahul
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social icon row -->
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/sairahul2006/" target="_blank" rel="noopener"
+               class="social-link" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/sairahul2006" target="_blank" rel="noopener"
+               class="social-link" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://x.com/home" target="_blank" rel="noopener"
+               class="social-link" aria-label="X / Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="mailto:r4650819@gmail.com" class="social-link" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div><!-- /contact-info -->
+
+        <!-- Right: contact form -->
+        <div class="contact-form-card">
+          <div class="section-label" style="margin-bottom:20px;">Send a Message</div>
+
+          <form action="#" method="POST" id="contactForm">
+            <div class="form-group">
+              <label for="name"><i class="fa-solid fa-user"></i> Full Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email"><i class="fa-solid fa-envelope"></i> Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject"><i class="fa-solid fa-tag"></i> Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message"><i class="fa-solid fa-message"></i> Message</label>
+              <textarea id="message" name="message" rows="5"
+                        placeholder="Tell me about your project or idea…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div><!-- /contact-form-card -->
+
+      </div><!-- /contact-grid -->
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       8. FOOTER
+  ════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-logo">Sai.dev</div>
+
+    <ul class="footer-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/sairahul2006/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/sairahul2006" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://x.com/home" target="_blank" rel="noopener" aria-label="Twitter / X">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="mailto:r4650819@gmail.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <p class="footer-copy">
+      © 2025 <span>Sai Rahul</span>. All rights reserved. &nbsp;·&nbsp;
+      Designed &amp; built by <span>Sai Rahul</span>.
+    </p>
+  </footer>
+
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
