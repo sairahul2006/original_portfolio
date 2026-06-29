@@ -35,12 +35,36 @@ if (skillSection) io.observe(skillSection);
 /* ── Contact form feedback ── */
 document.getElementById('contactForm').addEventListener('submit', function (e) {
   e.preventDefault();
-  const btn = this.querySelector('.btn-submit');
-  btn.innerHTML = '<i class="fa-solid fa-circle-check"></i> Message Sent!';
-  btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
-  setTimeout(() => {
-    btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
-    btn.style.background = '';
-    this.reset();
-  }, 3500);
+  
+  const form = this;
+  const btn = form.querySelector('.btn-submit');
+  const formData = new FormData(form);
+
+  // This actually sends the data to your Formspree endpoint URL!
+  fetch(form.action, {
+    method: 'POST',
+    body: formData,
+    headers: {
+        'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      // 1. Show the green "Message Sent!" UI on success
+      btn.innerHTML = '<i class="fa-solid fa-circle-check"></i> Message Sent!';
+      btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+      
+      // 2. Reset the form and button back after 3.5 seconds
+      setTimeout(() => {
+        btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
+        btn.style.background = '';
+        form.reset();
+      }, 3500);
+    } else {
+      alert('Oops! There was a problem submitting your form.');
+    }
+  })
+  .catch(error => {
+    alert('Oops! There was a network error. Please try again.');
+  });
 });
