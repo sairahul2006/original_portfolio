@@ -1,5 +1,5 @@
 /* ============================================================
-   PORTFOLIO STYLESHEET — Sai Rahul
+   PORTFOLIO STYLESHEET
    Color Palette:
      --indigo:   #4F46E5  (primary)
      --violet:   #7C3AED  (accent)
@@ -166,7 +166,7 @@ nav.scrolled {
 .nav-links a {
   display: block;
   padding: 7px 14px;
-  font-size: 0.875rem;
+  font-size: 1.09rem;
   font-weight: 500;
   color: var(--dark);
   text-decoration: none;
@@ -246,13 +246,18 @@ nav.scrolled {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 48px;
+  gap: 60px;
   position: relative;
   z-index: 1;
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+  padding-right: 40px;
 }
 
 .hero-text {
-  flex: 1;
+  flex: 0 1 560px;
+  max-width: 560px;
 }
 
 .hero-greeting {
@@ -283,7 +288,7 @@ nav.scrolled {
 }
 
 .hero-name {
-  font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
   font-weight: 800;
   color: var(--white);
   line-height: 1.12;
@@ -311,10 +316,16 @@ nav.scrolled {
   font-weight: 600;
 }
 
+#home .container {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 40px;
+}
+
 .hero-desc {
   font-size: 1rem;
   color: rgba(255,255,255,0.72);
-  max-width: 440px;
+  max-width: 560px;
   margin-bottom: 40px;
   line-height: 1.8;
 }
@@ -372,21 +383,22 @@ nav.scrolled {
 }
 
 .hero-photo-ring {
-    width: 340px;
-    height: 450px;
-    border-radius: 20px;
-    background: linear-gradient(135deg, #C4B5FD, #6366F1, #A855F7);
-    padding: 5px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
-    overflow: hidden;
+  width: 360px;
+  height: 460px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #C4B5FD, #6366F1, #A855F7);
+  padding: 5px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  overflow: hidden;
 }
 
 .hero-photo-ring img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    object-fit: cover;
-    border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  border: none;
+  display: block;
 }
 
 /* Floating badge on hero image */
@@ -1204,8 +1216,8 @@ footer {
   .hero-btns { justify-content: center; }
 
   .hero-photo-ring {
-    width: 220px;
-    height: 220px;
+    width: 280px;
+    height: 360px;
   }
 
   .hero-badge { right: 0; }
@@ -1242,7 +1254,7 @@ footer {
 
   .nav-toggle { display: flex; }
 
-  .hero-photo-ring { width: 180px; height: 180px; }
+  .hero-photo-ring { width: 220px; height: 280px; }
   .hero-badge { display: none; }
 
   .projects-grid { grid-template-columns: 1fr; }
